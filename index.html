@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Balto/Atchinsonr RSS Reader</title>
+  </head>
+  <script>$("p");</script>
+  <body>
+    <ul>
+		<li>Apple</li>
+		<li>Amazon</li>
+		<li>Google</li>
+		<li>Microsoft</li>
+	</ul>
+    This reader is using Node.js <script>document.write(process.versions.node)</script>,
+    Chromium <script>document.write(process.versions.chrome)</script>,
+    and Electron <script>document.write(process.versions.electron)</script>,
+	and jQuery.
+	
+	<script>if (typeof module == 'object'){window.module = module; module = undefined;}</script>
+    <script>
+      require('./renderer.js')
+      require('./app.js')
+    </script>
+	<script src = "node_modules/jquery/dist/jquery.js"></script>
+	<script>if (window.module) module = window.module;</script>
+  </body>
+</html>
